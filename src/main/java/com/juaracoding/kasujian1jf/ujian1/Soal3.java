@@ -16,7 +16,7 @@ public class Soal3 {
         int hari, jumlah, hargaSatuan, total;
 
         // Membaca input hari
-        System.out.print("Pilih Hari(1-7): ");
+        System.out.print("Pilih Hari: ");
         hari = input.nextInt();
 
         // Membaca input jumlah tiket
