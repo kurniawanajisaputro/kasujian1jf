@@ -13,7 +13,7 @@ public class Soal5 {
         Scanner scanner = new Scanner(System.in);
 
         // Meminta input karakter/teks
-        System.out.print("Masukkan karakter/teks: ");
+        System.out.print("Karakter: ");
         String input = scanner.nextLine();
 
         // Mendapatkan karakter pertama

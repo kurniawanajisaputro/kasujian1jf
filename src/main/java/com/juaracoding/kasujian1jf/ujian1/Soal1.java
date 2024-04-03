@@ -13,10 +13,10 @@ public class Soal1 {
         Scanner scanner = new Scanner(System.in);
 
         // Input
-        System.out.print("Masukkan qty: ");
+        System.out.print(" ");
         int qty = scanner.nextInt();
 
-        System.out.print("Masukkan harga: ");
+        System.out.print(" ");
         int harga = scanner.nextInt();
         double harga2=harga;
 
