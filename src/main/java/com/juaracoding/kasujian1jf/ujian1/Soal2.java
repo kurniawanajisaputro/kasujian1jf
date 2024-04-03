@@ -10,28 +10,28 @@ Version 1.0
 import java.util.Scanner;
 public class Soal2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        // Input
-        System.out.print("Masukkan teks: ");
-        String teks = scanner.nextLine();
+        // Menerima input dari user
+        System.out.print("Masukkan kata: ");
+        String kata = input.nextLine();
 
-        // Menghitung panjang teks
-        int panjangTeks = teks.length();
+        // Menghitung panjang string
+        int panjangKata = kata.length();
 
-        // Mengubah teks menjadi huruf besar
-        String teksUpperCase = teks.toUpperCase();
+        // Mengubah string menjadi huruf kapital
+        String kataKapital = kata.toUpperCase();
 
-        // Mengubah teks menjadi huruf kecil
-        String teksLowerCase = teks.toLowerCase();
+        // Mengubah string menjadi huruf kecil
+        String kataKecil = kata.toLowerCase();
 
-        // Mengambil substring dari teks
-        String substring = teks.substring(2, 6);
+        // Mendapatkan substring dari kata
+        String substring = kata.substring(7);
 
-        // Output
-        System.out.println("Panjang teks: " + panjangTeks);
-        System.out.println("Teks (huruf besar): " + teksUpperCase);
-        System.out.println("Teks (huruf kecil): " + teksLowerCase);
+        // Menampilkan output
+        System.out.println("Panjang kata: " + panjangKata);
+        System.out.println("Huruf kapital: " + kataKapital);
+        System.out.println("Huruf kecil: " + kataKecil);
         System.out.println("Substring: " + substring);
     }
 }
