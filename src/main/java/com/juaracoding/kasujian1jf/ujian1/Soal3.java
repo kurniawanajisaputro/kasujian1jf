@@ -10,28 +10,35 @@ Version 1.0
 import java.util.Scanner;
 public class Soal3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        // Input
-        System.out.print("Pilih Hari: ");
-        int hari = scanner.nextInt();
+        // Deklarasi variabel
+        int hari, jumlah, hargaSatuan, total;
+
+        // Membaca input hari
+        System.out.print("Pilih Hari(1-7): ");
+        hari = input.nextInt();
+
+        // Membaca input jumlah tiket
         System.out.print("Jumlah: ");
-        int jumlah = scanner.nextInt();
+        jumlah = input.nextInt();
 
-        // Harga
-        int hargaSatuan;
+        // Menentukan harga satuan berdasarkan hari
         if (hari <= 2) {
             hargaSatuan = 45000;
-        } else {
+        } else if (hari <= 7) {
             hargaSatuan = 30000;
+        } else {
+            System.out.println("Hari yang dipilih tidak valid!");
+            return;
         }
 
-        // Total
-        int total = hargaSatuan * jumlah;
+        // Menghitung total harga
+        total = jumlah * hargaSatuan;
 
-        // Output
+        // Menampilkan output
         System.out.println("Qty: " + jumlah);
-        System.out.println("Harga Satuan: Rp" + hargaSatuan);
+        System.out.println("Harga satuan: Rp" + hargaSatuan);
         System.out.println("Total: Rp" + total);
     }
 }
