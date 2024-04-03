@@ -18,13 +18,14 @@ public class Soal1 {
 
         System.out.print("Masukkan harga: ");
         int harga = scanner.nextInt();
+        double harga2=harga;
 
         // Menghitung jumlah
-        int jumlah = qty * harga;
+        double jumlah = qty * harga;
 
         // Output
         System.out.println("qty: " + qty);
-        System.out.println("Harga: " + harga);
+        System.out.println("Harga: " + harga2);
         System.out.println("Jumlah: " + jumlah);
     }
 }
